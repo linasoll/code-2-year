@@ -55,7 +55,7 @@ function pageChunksPlugin() {
 
 export default defineConfig(({ command }) => ({
   root,
-  base: command === 'build' ? '/static-site-09-25/' : '/',
+  base: command === 'build' ? '/' : '/', 
   plugins: [pageChunksPlugin()],
   build: {
     outDir,
@@ -73,3 +73,4 @@ export default defineConfig(({ command }) => ({
     open: true
   }
 }))
+
